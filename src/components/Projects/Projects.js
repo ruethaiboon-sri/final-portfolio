@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+// import editor from "../../Assets/Projects/codeEditor.png";
+import dogpostsapp from "../../Assets/Projects/dogpostsapp.png";
+import reactAssessment from "../../Assets/Projects/react-assessment.png";
+// import leaf from "../../Assets/Projects/leaf.png";
+// import emotion from "../../Assets/Projects/emotion.png";
+// import suicide from "../../Assets/Projects/suicide.png";
 
 function Projects() {
   return (
@@ -23,26 +23,25 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={dogpostsapp}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Dog Posts App"
+              description="A webpage that provides you a bunch of dog posts to brighten up your day! Build with React.js and deploy with Vercel. Have features which allows you to search for a dog post of your interest."
+              ghLink="https://github.com/ruethaiboon-sri/dog-app"
+              demoLink="https://dog-posts-application-9czgn1b0i-ruethaiboon-sri.vercel.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={reactAssessment}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="React Assessment"
+              description="My react assessment in Generation Thailand, a software developer camp. This project allows admin accounts to access restrictive features and divide them from other users."              ghLink="https://github.com/ruethaiboon-sri/career-changer-react-assessment"
+              demoLink="https://career-changer-react-assessment-sage.vercel.app/"
             />
           </Col>
-
+{/* 
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
@@ -52,9 +51,9 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Editor.io"
               demoLink="https://editor.soumya-jit.tech/"              
             />
-          </Col>
+          </Col> */}
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
@@ -86,7 +85,7 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </Container>
