@@ -5,6 +5,7 @@ import Particle from "../Particle";
 // import editor from "../../Assets/Projects/codeEditor.png";
 import dogpostsapp from "../../Assets/Projects/dogpostsapp.png";
 import reactAssessment from "../../Assets/Projects/react-assessment.png";
+import everlasting from "../../Assets/Projects/everlasting.png";
 // import leaf from "../../Assets/Projects/leaf.png";
 // import emotion from "../../Assets/Projects/emotion.png";
 // import suicide from "../../Assets/Projects/suicide.png";
@@ -21,6 +22,25 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={reactAssessment}
+              isBlog={false}
+              title="React Assessment"
+              description="My react assessment in Generation Thailand, a software developer camp. This project allows admin accounts to access restrictive features and divide them from other users."              ghLink="https://github.com/ruethaiboon-sri/career-changer-react-assessment"
+              demoLink="https://career-changer-react-assessment-sage.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={everlasting}
+              isBlog={false}
+              title="Everlasting Exercise Tracking Application"
+              description="An exercise tracking application with elderly user-friendly features. It allows users to save an excercise that they do with time and duration to keep track of excercise they are working on."              ghLink="https://github.com/JSD4-ProjectH/Everlasting-Frontend"
+              demoLink="https://everlasting.vercel.app/Login"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={dogpostsapp}
@@ -32,15 +52,8 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={reactAssessment}
-              isBlog={false}
-              title="React Assessment"
-              description="My react assessment in Generation Thailand, a software developer camp. This project allows admin accounts to access restrictive features and divide them from other users."              ghLink="https://github.com/ruethaiboon-sri/career-changer-react-assessment"
-              demoLink="https://career-changer-react-assessment-sage.vercel.app/"
-            />
-          </Col>
+
+
 {/* 
           <Col md={4} className="project-card">
             <ProjectCard
