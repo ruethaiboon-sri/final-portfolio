@@ -4,11 +4,13 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 // import editor from "../../Assets/Projects/codeEditor.png";
 import dogpostsapp from "../../Assets/Projects/dogpostsapp.png";
+import taskManagement from "../../Assets/Projects/task-management.png"
 import reactAssessment from "../../Assets/Projects/react-assessment.png";
 import everlasting from "../../Assets/Projects/everlasting.png";
 // import leaf from "../../Assets/Projects/leaf.png";
 // import emotion from "../../Assets/Projects/emotion.png";
 // import suicide from "../../Assets/Projects/suicide.png";
+
 
 function Projects() {
   return (
@@ -51,7 +53,16 @@ function Projects() {
               demoLink="https://dog-posts-application-9czgn1b0i-ruethaiboon-sri.vercel.app/"
             />
           </Col>
-
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={taskManagement}
+              isBlog={false}
+              title="Task Management App"
+              description="A Task Management App which allows users to keep track of their to-do list."
+              ghLink="https://github.com/ruethaiboon-sri/Task-Management-App"
+              demoLink="https://task-management-app-ecru.vercel.app/"
+            />
+          </Col>
 
 
 {/* 
