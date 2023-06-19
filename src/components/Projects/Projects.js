@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 // import editor from "../../Assets/Projects/codeEditor.png";
+import blogApp from "../../Assets/Projects/blog-app.png";
 import dogpostsapp from "../../Assets/Projects/dogpostsapp.png";
 import taskManagement from "../../Assets/Projects/task-management.png"
 import reactAssessment from "../../Assets/Projects/react-assessment.png";
@@ -61,6 +62,16 @@ function Projects() {
               description="A Task Management App which allows users to keep track of their to-do list."
               ghLink="https://github.com/ruethaiboon-sri/Task-Management-App"
               demoLink="https://task-management-app-ecru.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={blogApp}
+              isBlog={false}
+              title="Blog Application"
+              description="A Blog Application allows users to read and seach for desired blog."
+              ghLink="https://github.com/ruethaiboon-sri/blog-application"
+              demoLink="https://myblog-application.vercel.app/"
             />
           </Col>
 
